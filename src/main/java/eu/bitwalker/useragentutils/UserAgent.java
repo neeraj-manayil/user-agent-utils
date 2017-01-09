@@ -144,10 +144,6 @@ public class UserAgent implements Serializable
 		return browser;
 	}
 
-	/**
-	 * Returns an unique integer value of the operating system & browser combination
-	 * @return the id
-	 */
 	public int getId() {
 		return id;
 	}

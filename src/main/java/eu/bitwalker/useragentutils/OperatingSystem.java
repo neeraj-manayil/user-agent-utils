@@ -221,7 +221,6 @@ public enum OperatingSystem {
 	private final DeviceType deviceType;
 	private final OperatingSystem parent;
 	private List<OperatingSystem> children;
-	private Pattern versionRegEx;
 	private static List<OperatingSystem> topLevelOperatingSystems;
 	
     private OperatingSystem(Manufacturer manufacturer, OperatingSystem parent, int versionId, String name,
@@ -237,7 +236,7 @@ public enum OperatingSystem {
         this.excludeList = Utils.toLowerCase(exclude);
         this.deviceType = deviceType;
         if (versionRegexString != null) { // not implemented yet
-            this.versionRegEx = Pattern.compile(versionRegexString);
+            Pattern.compile(versionRegexString);
         }
         if (this.parent == null)
             addTopLevelOperatingSystem(this);
