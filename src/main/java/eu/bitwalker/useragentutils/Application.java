@@ -148,8 +148,8 @@ public enum Application {
 	 * Returns the enum constant of this type with the specified id. Throws
 	 * IllegalArgumentException if the value does not exist.
 	 * 
-	 * @param id
-	 * @return
+	 * @param id Applicatoin id
+	 * @return Applicatoin enum constant
 	 */
 	public static Application valueOf(short id) {
 		for (Application application : Application.values()) {

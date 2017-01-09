@@ -294,7 +294,7 @@ public enum OperatingSystem {
     /**
      * Checks if the given user-agent string matches to the operating system. 
      * Only checks for one specific operating system. 
-     * @param agentString
+     * @param agentString User-agent string
      * @return boolean
      */
     public boolean isInUserAgentString(String agentString)
@@ -342,7 +342,7 @@ public enum OperatingSystem {
 	/**
 	 * Parses user agent string and returns the best match. 
 	 * Returns OperatingSystem.UNKNOWN if there is no match.
-	 * @param agentString
+	 * @param agentString User-agent string
 	 * @return OperatingSystem
 	 */
 	public static OperatingSystem parseUserAgentString(String agentString)
@@ -362,7 +362,8 @@ public enum OperatingSystem {
      * Parses the user agent string and returns the best match for the given operating systems. 
      * Returns OperatingSystem.UNKNOWN if there is no match.
      * Be aware that if the order of the provided operating systems is incorrect or the set is too limited it can lead to false matches!
-     * @param agentString
+     * @param agentString User-agent string
+     * @param operatingSystems OS list
      * @return OperatingSystem
      */
     public static OperatingSystem parseUserAgentString(String agentString, List<OperatingSystem> operatingSystems)
@@ -389,8 +390,8 @@ public enum OperatingSystem {
 	/**
 	 * Returns the enum constant of this type with the specified id.
 	 * Throws IllegalArgumentException if the value does not exist.
-	 * @param id
-	 * @return 
+	 * @param id OS id
+	 * @return OperatingSystem enum constant
 	 */
 	public static OperatingSystem valueOf(short id)
 	{

@@ -112,7 +112,7 @@ public class UserAgent implements Serializable
 
 	
 	/**
-	 * @param userAgentString
+	 * @param userAgentString User-agent string
 	 * @return UserAgent
 	 */
 	public static UserAgent parseUserAgentString(String userAgentString) {		
@@ -157,8 +157,8 @@ public class UserAgent implements Serializable
 	
 	/**
 	 * Returns UserAgent based on specified unique id
-	 * @param id
-	 * @return
+	 * @param id Unique id
+	 * @return UserAgent
 	 */
 	public static UserAgent valueOf(int id)
 	{
@@ -169,8 +169,8 @@ public class UserAgent implements Serializable
 	
 	/**
 	 * Returns UserAgent based on combined string representation
-	 * @param name
-	 * @return
+	 * @param name combined string representation
+	 * @return UserAgent
 	 */
 	public static UserAgent valueOf(String name)
 	{

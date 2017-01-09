@@ -390,6 +390,7 @@ public enum Browser {
 	/**
 	 * Detects the detailed version information of the browser. Depends on the userAgent to be available.
 	 * Returns null if it can not detect the version information.
+	 * @param userAgentString User Agent 
 	 * @return Version
 	 */
 	public Version getVersion(String userAgentString) {
@@ -475,7 +476,7 @@ public enum Browser {
 	 * Starts with the top level browsers and only if one of those matches
 	 * checks children browsers.
 	 * Steps out of loop as soon as there is a match.
-	 * @param agentString
+	 * @param agentString User-agent string
 	 * @return Browser
 	 */
 	public static Browser parseUserAgentString(String agentString)
@@ -497,8 +498,9 @@ public enum Browser {
      * If no match can be found Browser.UNKNOWN will be returned.
      * Steps out of loop as soon as there is a match.
      * Be aware that if the order of the provided Browsers is incorrect or if the set is too limited it can lead to false matches!
-     * @param agentString
-     * @return Browser
+     * @param agentString User-agent string
+     * @param browsers Browser List
+     * @return Browser enum constant
      */
     public static Browser parseUserAgentString(String agentString, List<Browser> browsers)
     {
@@ -522,8 +524,8 @@ public enum Browser {
 	/**
 	 * Returns the enum constant of this type with the specified id.
 	 * Throws IllegalArgumentException if the value does not exist.
-	 * @param id
-	 * @return
+	 * @param id Browser id
+	 * @return Browser enum constant
 	 */
 	public static Browser valueOf(short id)
 	{
