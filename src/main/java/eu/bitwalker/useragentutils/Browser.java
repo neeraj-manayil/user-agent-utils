@@ -100,9 +100,11 @@ public enum Browser {
 	 */
 	EDGE(			Manufacturer.MICROSOFT, null, 300, "Microsoft Edge", new String[] {"Edge"}, null, BrowserType.WEB_BROWSER, RenderingEngine.EDGE_HTML, new PatternBasedVersionFetcher("(?:Edge\\/(([0-9]+)\\.([0-9]*)))")),
 		EDGE_MOBILE(	Manufacturer.MICROSOFT, Browser.EDGE, 304, "Microsoft Edge Mobile", new String[] {"Mobile Safari"}, null, BrowserType.MOBILE_BROWSER, RenderingEngine.EDGE_HTML, null ),
+		EDGE_MOBILE15(Manufacturer.MICROSOFT, Browser.EDGE_MOBILE, 310, "Microsoft Edge Mobile 15", new String[] {"Edge/15"}, null, BrowserType.MOBILE_BROWSER, RenderingEngine.EDGE_HTML, null ),
 		EDGE_MOBILE14(Manufacturer.MICROSOFT, Browser.EDGE_MOBILE, 307, "Microsoft Edge Mobile 14", new String[] {"Edge/14"}, null, BrowserType.MOBILE_BROWSER, RenderingEngine.EDGE_HTML, null ),
 		EDGE_MOBILE13(Manufacturer.MICROSOFT, Browser.EDGE_MOBILE, 308, "Microsoft Edge Mobile 13", new String[] {"Edge/13"}, null, BrowserType.MOBILE_BROWSER, RenderingEngine.EDGE_HTML, null ),
 		EDGE_MOBILE12(Manufacturer.MICROSOFT, Browser.EDGE_MOBILE, 302, "Microsoft Edge Mobile 12", new String[] {"Edge/12"}, null, BrowserType.MOBILE_BROWSER, RenderingEngine.EDGE_HTML, null ),
+		EDGE15(			Manufacturer.MICROSOFT, Browser.EDGE, 309, "Microsoft Edge 15", new String[] {"Edge/15"}, new String[] {"Mobile"}, BrowserType.WEB_BROWSER, RenderingEngine.EDGE_HTML, null ),
 		EDGE14(			Manufacturer.MICROSOFT, Browser.EDGE, 305, "Microsoft Edge 14", new String[] {"Edge/14"}, new String[] {"Mobile"}, BrowserType.WEB_BROWSER, RenderingEngine.EDGE_HTML, null ),
 		EDGE13(			Manufacturer.MICROSOFT, Browser.EDGE, 303, "Microsoft Edge 13", new String[] {"Edge/13"}, new String[] {"Mobile"}, BrowserType.WEB_BROWSER, RenderingEngine.EDGE_HTML, null ),
 		EDGE12(			Manufacturer.MICROSOFT, Browser.EDGE, 301, "Microsoft Edge 12", new String[] {"Edge/12"}, new String[] {"Mobile"}, BrowserType.WEB_BROWSER, RenderingEngine.EDGE_HTML, null ),
