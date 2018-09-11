@@ -118,6 +118,8 @@ public enum Browser {
 	 */
 	CHROME( 		Manufacturer.GOOGLE, null, 1, "Chrome", new String[] { "Chrome", "CrMo", "CriOS" }, new String[] { "OPR/", "Web Preview", "Vivaldi" } , BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, new PatternBasedVersionFetcher("Chrome\\/(([0-9]+)\\.?([\\w]+)?(\\.[\\w]+)?(\\.[\\w]+)?)") ), // before Mozilla
 		CHROME_MOBILE( 	Manufacturer.GOOGLE, Browser.CHROME, 100, "Chrome Mobile", new String[] { "CrMo","CriOS", "Mobile Safari" }, new String[] {"OPR/"}, BrowserType.MOBILE_BROWSER, RenderingEngine.WEBKIT, new PatternBasedVersionFetcher("(?:CriOS|CrMo|Chrome)\\/(([0-9]+)\\.?([\\w]+)?(\\.[\\w]+)?(\\.[\\w]+)?)") ),
+		CHROME69(         Manufacturer.GOOGLE, Browser.CHROME, 75, "Chrome 69", new String[] { "Chrome/69" }, new String[] { "OPR/", "Web Preview", "Vivaldi" }, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, null ), // before Mozilla
+		CHROME68( 		Manufacturer.GOOGLE, Browser.CHROME, 74, "Chrome 68", new String[] { "Chrome/68" }, new String[] { "OPR/", "Web Preview", "Vivaldi" }, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, null ), // before Mozilla
 		CHROME67( 		Manufacturer.GOOGLE, Browser.CHROME, 73, "Chrome 67", new String[] { "Chrome/67" }, new String[] { "OPR/", "Web Preview", "Vivaldi" }, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, null ), // before Mozilla
 		CHROME66( 		Manufacturer.GOOGLE, Browser.CHROME, 72, "Chrome 66", new String[] { "Chrome/66" }, new String[] { "OPR/", "Web Preview", "Vivaldi" }, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, null ), // before Mozilla
 		CHROME65( 		Manufacturer.GOOGLE, Browser.CHROME, 71, "Chrome 65", new String[] { "Chrome/65" }, new String[] { "OPR/", "Web Preview", "Vivaldi" }, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, null ), // before Mozilla
@@ -189,6 +191,8 @@ public enum Browser {
 		 * Firefox for iOS devices. This Firefox version is using webkit instead of gecko rendering engine.
 		 */
 		FIREFOX_MOBILE_IOS(Manufacturer.MOZILLA, FIREFOX_MOBILE, 224, "Firefox Mobile (iOS)", new String[] { "FxiOS" }, null, BrowserType.MOBILE_BROWSER, RenderingEngine.WEBKIT, null ),  
+	FIREFOX62(      Manufacturer.MOZILLA, Browser.FIREFOX, 242, "Firefox 62", new String[] { "Firefox/62" }, null, BrowserType.WEB_BROWSER, RenderingEngine.GECKO, null ),  // using Gecko Engine
+	FIREFOX61(      Manufacturer.MOZILLA, Browser.FIREFOX, 241, "Firefox 61", new String[] { "Firefox/61" }, null, BrowserType.WEB_BROWSER, RenderingEngine.GECKO, null ),  // using Gecko Engine
 	FIREFOX60(		Manufacturer.MOZILLA, Browser.FIREFOX, 240, "Firefox 60", new String[] { "Firefox/60" }, null, BrowserType.WEB_BROWSER, RenderingEngine.GECKO, null ),  // using Gecko Engine
 	FIREFOX59(		Manufacturer.MOZILLA, Browser.FIREFOX, 239, "Firefox 59", new String[] { "Firefox/59" }, null, BrowserType.WEB_BROWSER, RenderingEngine.GECKO, null ),  // using Gecko Engine
 	FIREFOX58(		Manufacturer.MOZILLA, Browser.FIREFOX, 238, "Firefox 58", new String[] { "Firefox/58" }, null, BrowserType.WEB_BROWSER, RenderingEngine.GECKO, null ),  // using Gecko Engine
