@@ -321,7 +321,7 @@ public class BrowserTest {
 	};
 	
 	String[] futureFirefoxVersion = new String[] {
-			"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:28.0) Gecko/20100101 Firefox/65"
+			"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:28.0) Gecko/20100101 Firefox/69"
 	};
 		
 	String[] safari = {

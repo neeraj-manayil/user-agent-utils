@@ -121,6 +121,9 @@ public enum Browser {
 	 */
 	CHROME( 		Manufacturer.GOOGLE, null, 1, "Chrome", new String[] { "Chrome", "CrMo", "CriOS" }, new String[] { "OPR/", "Web Preview", "Vivaldi" } , BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, new PatternBasedVersionFetcher("Chrome\\/(([0-9]+)\\.?([\\w]+)?(\\.[\\w]+)?(\\.[\\w]+)?)") ), // before Mozilla
 		CHROME_MOBILE( 	Manufacturer.GOOGLE, Browser.CHROME, 100, "Chrome Mobile", new String[] { "CrMo","CriOS", "Mobile Safari" }, new String[] {"OPR/"}, BrowserType.MOBILE_BROWSER, RenderingEngine.WEBKIT, new PatternBasedVersionFetcher("(?:CriOS|CrMo|Chrome)\\/(([0-9]+)\\.?([\\w]+)?(\\.[\\w]+)?(\\.[\\w]+)?)") ),
+		CHROME72(		Manufacturer.GOOGLE, Browser.CHROME, 78, "Chrome 72", new String[] { "Chrome/72" }, new String[] { "OPR/", "Web Preview", "Vivaldi" }, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, null ), // before Mozilla
+		CHROME71(		Manufacturer.GOOGLE, Browser.CHROME, 77, "Chrome 71", new String[] { "Chrome/71" }, new String[] { "OPR/", "Web Preview", "Vivaldi" }, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, null ), // before Mozilla
+		CHROME70(		Manufacturer.GOOGLE, Browser.CHROME, 76, "Chrome 70", new String[] { "Chrome/70" }, new String[] { "OPR/", "Web Preview", "Vivaldi" }, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, null ), // before Mozilla
 		CHROME69(		Manufacturer.GOOGLE, Browser.CHROME, 75, "Chrome 69", new String[] { "Chrome/69" }, new String[] { "OPR/", "Web Preview", "Vivaldi" }, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, null ), // before Mozilla
 		CHROME68( 		Manufacturer.GOOGLE, Browser.CHROME, 74, "Chrome 68", new String[] { "Chrome/68" }, new String[] { "OPR/", "Web Preview", "Vivaldi" }, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, null ), // before Mozilla
 		CHROME67( 		Manufacturer.GOOGLE, Browser.CHROME, 73, "Chrome 67", new String[] { "Chrome/67" }, new String[] { "OPR/", "Web Preview", "Vivaldi" }, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, null ), // before Mozilla
@@ -194,6 +197,9 @@ public enum Browser {
 		 * Firefox for iOS devices. This Firefox version is using webkit instead of gecko rendering engine.
 		 */
 		FIREFOX_MOBILE_IOS(Manufacturer.MOZILLA, FIREFOX_MOBILE, 224, "Firefox Mobile (iOS)", new String[] { "FxiOS" }, null, BrowserType.MOBILE_BROWSER, RenderingEngine.WEBKIT, null ),  
+	FIREFOX65(		Manufacturer.MOZILLA, Browser.FIREFOX, 244, "Firefox 65", new String[] { "Firefox/65" }, null, BrowserType.WEB_BROWSER, RenderingEngine.GECKO, null ),  // using Gecko Engine
+	FIREFOX64(		Manufacturer.MOZILLA, Browser.FIREFOX, 243, "Firefox 64", new String[] { "Firefox/64" }, null, BrowserType.WEB_BROWSER, RenderingEngine.GECKO, null ),  // using Gecko Engine
+	FIREFOX63(		Manufacturer.MOZILLA, Browser.FIREFOX, 242, "Firefox 63", new String[] { "Firefox/63" }, null, BrowserType.WEB_BROWSER, RenderingEngine.GECKO, null ),  // using Gecko Engine
 	FIREFOX62(		Manufacturer.MOZILLA, Browser.FIREFOX, 241, "Firefox 62", new String[] { "Firefox/62" }, null, BrowserType.WEB_BROWSER, RenderingEngine.GECKO, null ),  // using Gecko Engine
 	FIREFOX61(		Manufacturer.MOZILLA, Browser.FIREFOX, 240, "Firefox 61", new String[] { "Firefox/61" }, null, BrowserType.WEB_BROWSER, RenderingEngine.GECKO, null ),  // using Gecko Engine
 	FIREFOX60(		Manufacturer.MOZILLA, Browser.FIREFOX, 239, "Firefox 60", new String[] { "Firefox/60" }, null, BrowserType.WEB_BROWSER, RenderingEngine.GECKO, null ),  // using Gecko Engine
@@ -267,6 +273,7 @@ public enum Browser {
 		BLACKBERRY10( Manufacturer.BLACKBERRY, Browser.SAFARI, 10, "BlackBerry", new String[] { "BB10" }, null, BrowserType.MOBILE_BROWSER, RenderingEngine.WEBKIT, null),
 		MOBILE_SAFARI(	Manufacturer.APPLE, Browser.SAFARI, 2, "Mobile Safari", new String[] { "Mobile Safari","Mobile/" }, new String[] { "bot", "preview", "OPR/", "Coast/", "Vivaldi", "CFNetwork", "FxiOS" }, BrowserType.MOBILE_BROWSER, RenderingEngine.WEBKIT, null ),  // before Safari
 		SILK(			Manufacturer.AMAZON, Browser.SAFARI, 15, "Silk", new String[] { "Silk/" }, null, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, new PatternBasedVersionFetcher("Silk\\/(([0-9]+)\\.?([\\w]+)?(\\.[\\w]+)?(\\-[\\w]+)?)") ),  // http://en.wikipedia.org/wiki/Amazon_Silk
+		SAFARI12(		Manufacturer.APPLE, Browser.SAFARI, 13, "Safari 12", new String[] { "Version/12" }, new String[] { "bot" }, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, null ),  // before AppleWebKit
 		SAFARI11(		Manufacturer.APPLE, Browser.SAFARI, 12, "Safari 11", new String[] { "Version/11" }, new String[] { "bot" }, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, null ),  // before AppleWebKit
 		SAFARI10(		Manufacturer.APPLE, Browser.SAFARI, 11, "Safari 10", new String[] { "Version/10" }, new String[] { "bot" }, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, null ),  // before AppleWebKit
 		SAFARI9(		Manufacturer.APPLE, Browser.SAFARI, 9, "Safari 9", new String[] { "Version/9" }, new String[] { "bot" }, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, null ),  // before AppleWebKit
