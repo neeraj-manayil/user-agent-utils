@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2008-2016, Harald Walker (bitwalker.eu) and contributing developers 
+* Copyright (c) 2008-2018, Harald Walker (bitwalker.eu) and contributing developers 
 * All rights reserved.
 * 
 * Redistribution and use in source and binary forms, with or
@@ -381,7 +381,6 @@ public class BrowserTest {
 	String[] opera = {
 			"Opera/8.0 (Macintosh; PPC Mac OS X; U; en)",
 			"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36 OPR/66.0.1889.174",
-			"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36 OPR/43.0.1948.25"
 		};
 	
 	String[] opera9 = {
@@ -509,7 +508,15 @@ public class BrowserTest {
 			"Mozilla/5.0 (compatible; Ask Jeeves/Teoma; +http://about.ask.com/en/docs/about/webmasters.shtml)",
 			"ThumbSniper (http://thumbsniper.com)",
 			"Phantom.js bot",
-			"Mozilla/5.0 (iPhone; CPU iPhone OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12B411 Safari/600.1.4 (compatible; YandexMobileBot/3.0; +http://yandex.com/bots)"
+			"Mozilla/5.0 (iPhone; CPU iPhone OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12B411 Safari/600.1.4 (compatible; YandexMobileBot/3.0; +http://yandex.com/bots)",
+			"Java/1.8.0_20",
+			"Java/1.8.0_74",
+			"python-requests/2.18.4",
+			"python-requests/2.18.1",
+			"Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)",
+			"AdsBot-Google (+http://www.google.com/adsbot.html)",
+			"Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+			"Mozilla/5.0 (compatible; AhrefsBot/5.2; +http://ahrefs.com/robot/)"
 	};
 	
 	String[] mobileBot = {

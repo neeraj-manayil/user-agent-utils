@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2008-2016, Harald Walker (bitwalker.eu) and contributing developers  
+* Copyright (c) 2008-2018, Harald Walker (bitwalker.eu) and contributing developers  
 * All rights reserved.
 * 
 * Redistribution and use in source and binary forms, with or
@@ -194,6 +194,18 @@ public class OperatingSystemTest {
 			"Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12F70 Safari/600.1.4"
 	};
 	
+	String[] iPhoneIos9 = {
+			"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1"
+	};
+	
+	String[] iPhoneIos10 = {
+			"Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Version/10.0 Mobile/14D27 Safari/602.1"
+	};
+	
+	String[] iPhoneIos11 = {
+			"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.21 (KHTML, like Gecko) Version/10.0 Mobile/15A5278f Safari/602.1"
+	};
+	
 	String[] iPods = {
 			"Mozilla/5.0 (iPod; U; CPU like Mac OS X; nl-nl) AppleWebKit/420.1 (KHTML, like Gecko)",
 			"Mozilla/5.0 (iPod; U; CPU like Mac OS X; en) AppleWebKit/420.1 (KHTML, like Gecko)",
@@ -222,6 +234,14 @@ public class OperatingSystemTest {
 	
 	String[] iPadIos8_4 = {
 			"Mozilla/5.0 (iPad; CPU OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12H143 Safari/600.1.4"
+	};
+		
+	String[] iPadIos9 = {
+			"Mozilla/5.0 (iPad; CPU OS 9_2_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13D15 Safari/601.1"
+	};
+	
+	String[] iPadIos10 = {
+			"Mozilla/5.0 (iPad; CPU OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Version/10.0 Mobile/14D27 Safari/602.1"
 	};
 	
 	String[] blackberries = {
@@ -263,6 +283,11 @@ public class OperatingSystemTest {
 	String[] android6g = {
 			"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Mobile Safari/537.36", // Nexus 5 WebView
 			"Mozilla/5.0 (Linux; Android 6.0; Nexus 5X Build/MDB08L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36" // Nexus 5x
+	};
+	
+	String[] android8 = {
+			"Mozilla/5.0 (Linux; Android 8.0.0; Pixel XL Build/OPP3.170518.006) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36",
+			"Mozilla/5.0 (Linux; Android 8.0; SAMSUNG Pixel Build/OPR6.170623.012) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/6.2 Chrome/56.0.2924.87 Mobile Safari/537.36"
 	};
 	
 	String[] android2_tablet= {
@@ -372,7 +397,12 @@ public class OperatingSystemTest {
 	};
 	
 	String[] ubuntu_touch = {
-			"Mozilla/5.0 (Linux; Ubuntu 14.04 like Android 4.4) AppleWebKit/537.36 Chromium/35.0.1870.2 Mobile Safari/537.36 "
+			"Mozilla/5.0 (Linux; Ubuntu 14.04 like Android 4.4) AppleWebKit/537.36 Chromium/35.0.1870.2 Mobile Safari/537.36"
+	};
+	
+	String[] linuxSmartTV = {
+			"Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB97/0.0.39.18 (DIGIHOME, Mxl661L32, wireless) VSTVB_MB97 SmartTvA/3.0.0",
+			"Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV+2015; Maple2012) AppleWebKit/537.42+ (KHTML, like Gecko) SmartTV Safari/537.42+"
 	};
 
 	String[] ubuntu = {
@@ -392,6 +422,29 @@ public class OperatingSystemTest {
 		"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; en-us; Silk/1.1.0-80) AppleWebKit/533.16 (KHTML, like Gecko) Version/5.0 Safari/533.16 Silk-Accelerated=true" // silk mode
 	};
 	
+	String[] tizen2_tv = {
+			"Mozilla/5.0 (SMART-TV; Linux; Tizen 2.3) AppleWebkit/538.1 (KHTML, like Gecko) SamsungBrowser/1.0 TV Safari/538.1",
+			"Mozilla/5.0 (Linux; Tizen 2.3; SmartHub; SMART-TV; SmartTV; U; Maple2012) AppleWebKit/538.1+ (KHTML, like Gecko) TV Safari/538.1+"
+	};
+	
+	String[] tizen2_mobile = {
+			"Mozilla/5.0 (Linux; Tizen 2.3; SAMSUNG SM-Z130H) AppleWebKit/537.3 (KHTML, like Gecko) SamsungBrowser/1.0 Mobile Safari/537.3",
+			"Mozilla/5.0 (Linux; U; Tizen 2.0; en-us) AppleWebKit/537.1 (KHTML, like Gecko) Mobile TizenBrowser/2.0"
+	};
+	
+	String[] tizen3_mobile = {
+			"Mozilla/5.0 (Linux; Tizen 3.0; SAMSUNG SM-Z400Y) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/47.0.2526.69 Mobile Safari/537.36"
+	};
+	
+	String[] tizen3_tv = {
+			"Mozilla/5.0 (SMART-TV; Linux; Tizen 3.0) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/47.0.2526.69 TV safari/537.36"
+	};
+	
+	// sometimes there is no useful information. Could by any kind of device. 
+	String[] tizen = {
+			"Opera/9.80 (Tizen; Opera Mini/7.6.9/36.2084; U; en) Presto/2.12.423 Version/12.16"
+	};
+		
 	String[] roku = {
 			"Roku/DVP-4.1 (024.01E01250A)", // Roku 2 XD
 			"Roku/DVP-3.0 (013.00E02227A)"
@@ -446,19 +499,25 @@ public class OperatingSystemTest {
 		testAgents(iPhone8, OperatingSystem.iOS8_IPHONE);
 		testAgents(iPhone8_1, OperatingSystem.iOS8_1_IPHONE);
 		testAgents(iPhone8_3, OperatingSystem.iOS8_3_IPHONE);
+		testAgents(iPhoneIos9, OperatingSystem.iOS9_IPHONE);
+		testAgents(iPhoneIos10, OperatingSystem.iOS10_IPHONE);
+		testAgents(iPhoneIos11, OperatingSystem.iOS11_IPHONE);
 		testAgents(iPods, OperatingSystem.MAC_OS_X_IPOD);
 		testAgents(iPadIos6, OperatingSystem.iOS6_IPAD);
 		testAgents(iPadIos7, OperatingSystem.iOS7_IPAD);
 		testAgents(iPadIos8, OperatingSystem.iOS8_IPAD);
 		testAgents(iPadIos8_4, OperatingSystem.iOS8_4_IPAD);
+		testAgents(iPadIos9, OperatingSystem.iOS9_IPAD);
+		testAgents(iPadIos10, OperatingSystem.iOS10_IPAD);
 		testAgents(iPad, OperatingSystem.MAC_OS_X_IPAD);
 		testAgents(blackberries, OperatingSystem.BLACKBERRY);
 		testAgents(blackberry6, OperatingSystem.BLACKBERRY6);
 		testAgents(android1g, OperatingSystem.ANDROID1);
 		testAgents(android2g, OperatingSystem.ANDROID2);
 		testAgents(android4g, OperatingSystem.ANDROID4);
-                testAgents(android5g, OperatingSystem.ANDROID5);
+        testAgents(android5g, OperatingSystem.ANDROID5);
 		testAgents(android6g, OperatingSystem.ANDROID6);
+		testAgents(android8, OperatingSystem.ANDROID8);
 		testAgents(android2_tablet, OperatingSystem.ANDROID2_TABLET);
 		testAgents(android3_tablet, OperatingSystem.ANDROID3_TABLET);
 		testAgents(android4_tablet, OperatingSystem.ANDROID4_TABLET);
@@ -478,6 +537,12 @@ public class OperatingSystemTest {
 		testAgents(genericTablet, OperatingSystem.UNKNOWN_TABLET);
 		testAgents(unknown, OperatingSystem.UNKNOWN);
 		testAgents(ubuntu_touch, OperatingSystem.UBUNTU_TOUCH_MOBILE);
+		testAgents(linuxSmartTV, OperatingSystem.LINUX_SMART_TV);
+		testAgents(tizen, OperatingSystem.TIZEN);
+		testAgents(tizen2_mobile, OperatingSystem.TIZEN2_MOBILE);
+		testAgents(tizen2_tv, OperatingSystem.TIZEN2_TV);
+		testAgents(tizen3_mobile, OperatingSystem.TIZEN3_MOBILE);
+		testAgents(tizen3_tv, OperatingSystem.TIZEN3_TV);
 	}
 
 	@Test
@@ -561,7 +626,7 @@ public class OperatingSystemTest {
 		
 		for (OperatingSystem operatingSystem : OperatingSystem.values())
 		{
-			assertTrue(!retrievedIdValues.contains(operatingSystem.getId()));
+			assertTrue("value for " + operatingSystem + "should not be used by another enum",!retrievedIdValues.contains(operatingSystem.getId()));
 			retrievedIdValues.add(operatingSystem.getId());
 		}
 		

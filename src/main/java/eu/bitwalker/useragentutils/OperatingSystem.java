@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2008-2016, Harald Walker (bitwalker.eu) and contributing developers
+* Copyright (c) 2008-2018, Harald Walker (bitwalker.eu) and contributing developers
 * All rights reserved.
 * 
 * Redistribution and use in source and binary forms, with or
@@ -66,12 +66,17 @@ public enum OperatingSystem {
 		WINDOWS_MOBILE(	Manufacturer.MICROSOFT,OperatingSystem.WINDOWS, 50, "Windows Mobile", new String[] { "Windows CE" },  null, DeviceType.MOBILE, null ), // before Win
 		WINDOWS_98(		Manufacturer.MICROSOFT,OperatingSystem.WINDOWS,5, "Windows 98", new String[] { "Windows 98","Win98" },  new String[] { "Palm" }, DeviceType.COMPUTER, null ), // before Win 
 		XBOX_OS(Manufacturer.MICROSOFT, OperatingSystem.WINDOWS,62, "Xbox OS",new String[]{"xbox"},new String[]{}, DeviceType.GAME_CONSOLE, null),
-		
+	
+	// for Google user-agent, see https://developer.chrome.com/multidevice/user-agent
 	ANDROID(		Manufacturer.GOOGLE,null, 0, "Android", new String[] { "Android" },  new String[] {"Ubuntu"}, DeviceType.MOBILE, null ),
-                ANDROID6(		Manufacturer.GOOGLE,OperatingSystem.ANDROID, 6, "Android 6.x", new String[] { "Android 6", "Android-6" },   new String[] { "glass" }, DeviceType.MOBILE, null ),
-                ANDROID6_TABLET(Manufacturer.GOOGLE,OperatingSystem.ANDROID6, 60, "Android 6.x Tablet", new String[] { "Android 6", "Android-6"}, new String[] { "mobile", "glass"}, DeviceType.TABLET, null ),
-                ANDROID5(		Manufacturer.GOOGLE,OperatingSystem.ANDROID, 5, "Android 5.x", new String[] { "Android 5", "Android-5" },   new String[] { "glass" }, DeviceType.MOBILE, null ),
-                ANDROID5_TABLET(Manufacturer.GOOGLE,OperatingSystem.ANDROID5, 50, "Android 5.x Tablet", new String[] { "Android 5", "Android-5"}, new String[] { "mobile", "glass"}, DeviceType.TABLET, null ),
+		ANDROID8(		Manufacturer.GOOGLE,OperatingSystem.ANDROID, 8, "Android 8.x", new String[] { "Android 8", "Android-8" },   new String[] { "glass" }, DeviceType.MOBILE, null ),
+        ANDROID8_TABLET(Manufacturer.GOOGLE,OperatingSystem.ANDROID8, 80, "Android 8.x Tablet", new String[] { "Android 8", "Android-8"}, new String[] { "mobile", "glass"}, DeviceType.TABLET, null ),
+		ANDROID7(		Manufacturer.GOOGLE,OperatingSystem.ANDROID, 7, "Android 7.x", new String[] { "Android 7", "Android-7" },   new String[] { "glass" }, DeviceType.MOBILE, null ),
+        ANDROID7_TABLET(Manufacturer.GOOGLE,OperatingSystem.ANDROID7, 70, "Android 7.x Tablet", new String[] { "Android 7", "Android-7"}, new String[] { "mobile", "glass"}, DeviceType.TABLET, null ),
+		ANDROID6(		Manufacturer.GOOGLE,OperatingSystem.ANDROID, 6, "Android 6.x", new String[] { "Android 6", "Android-6" },   new String[] { "glass" }, DeviceType.MOBILE, null ),
+        ANDROID6_TABLET(Manufacturer.GOOGLE,OperatingSystem.ANDROID6, 60, "Android 6.x Tablet", new String[] { "Android 6", "Android-6"}, new String[] { "mobile", "glass"}, DeviceType.TABLET, null ),
+        ANDROID5(		Manufacturer.GOOGLE,OperatingSystem.ANDROID, 5, "Android 5.x", new String[] { "Android 5", "Android-5" },   new String[] { "glass" }, DeviceType.MOBILE, null ),
+        ANDROID5_TABLET(Manufacturer.GOOGLE,OperatingSystem.ANDROID5, 50, "Android 5.x Tablet", new String[] { "Android 5", "Android-5"}, new String[] { "mobile", "glass"}, DeviceType.TABLET, null ),
 		ANDROID4(		Manufacturer.GOOGLE,OperatingSystem.ANDROID, 4, "Android 4.x", new String[] { "Android 4", "Android-4" },   new String[] { "glass", "ubuntu"}, DeviceType.MOBILE, null ),
 		ANDROID4_TABLET(Manufacturer.GOOGLE,OperatingSystem.ANDROID4, 40, "Android 4.x Tablet", new String[] { "Android 4", "Android-4"}, new String[] { "mobile", "glass", "ubuntu" }, DeviceType.TABLET, null ),
 		ANDROID4_WEARABLE(Manufacturer.GOOGLE,OperatingSystem.ANDROID, 400, "Android 4.x", new String[] { "Android 4" }, new String[] {"ubuntu"}, DeviceType.WEARABLE, null ),
@@ -103,6 +108,8 @@ public enum OperatingSystem {
 	 * iOS4, with the release of the iPhone 4, Apple renamed the OS to iOS.
 	 */	
 	IOS(			Manufacturer.APPLE,null, 2, "iOS", new String[] { "iPhone", "like Mac OS X" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+		iOS11_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 92, "iOS 11 (iPhone)", new String[] { "iPhone OS 11" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
+		iOS10_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 91, "iOS 10 (iPhone)", new String[] { "iPhone OS 10" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
 		iOS9_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 90, "iOS 9 (iPhone)", new String[] { "iPhone OS 9" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
 		iOS8_4_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 49, "iOS 8.4 (iPhone)", new String[] { "iPhone OS 8_4" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
 		iOS8_3_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 48, "iOS 8.3 (iPhone)", new String[] { "iPhone OS 8_3" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
@@ -114,6 +121,8 @@ public enum OperatingSystem {
 		iOS5_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 42, "iOS 5 (iPhone)", new String[] { "iPhone OS 5" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
 		iOS4_IPHONE(	Manufacturer.APPLE,OperatingSystem.IOS, 41, "iOS 4 (iPhone)", new String[] { "iPhone OS 4" },  null, DeviceType.MOBILE, null ), // before MAC_OS_X_IPHONE for all older versions
 		MAC_OS_X_IPAD(	Manufacturer.APPLE, OperatingSystem.IOS, 50, "Mac OS X (iPad)", new String[] { "iPad" },  null, DeviceType.TABLET, null ), // before Mac OS X
+		iOS11_IPAD(	Manufacturer.APPLE, OperatingSystem.MAC_OS_X_IPAD, 60, "iOS 11 (iPad)", new String[] { "OS 11" },  null, DeviceType.TABLET, null ), // before Mac OS X
+		iOS10_IPAD(	Manufacturer.APPLE, OperatingSystem.MAC_OS_X_IPAD, 59, "iOS 10 (iPad)", new String[] { "OS 10" },  null, DeviceType.TABLET, null ), // before Mac OS X
 		iOS9_IPAD(	Manufacturer.APPLE, OperatingSystem.MAC_OS_X_IPAD, 58, "iOS 9 (iPad)", new String[] { "OS 9" },  null, DeviceType.TABLET, null ), // before Mac OS X
 		iOS8_4_IPAD(	Manufacturer.APPLE, OperatingSystem.MAC_OS_X_IPAD, 57, "iOS 8.4 (iPad)", new String[] { "OS 8_4" },  null, DeviceType.TABLET, null ), // before Mac OS X
 		iOS8_3_IPAD(	Manufacturer.APPLE, OperatingSystem.MAC_OS_X_IPAD, 56, "iOS 8.3 (iPad)", new String[] { "OS 8_3" },  null, DeviceType.TABLET, null ), // before Mac OS X
@@ -146,6 +155,21 @@ public enum OperatingSystem {
      *  Google TV uses Android 2.x or 3.x but doesn't identify itself as Android.
      */
 	GOOGLE_TV(		Manufacturer.GOOGLE,null, 100, "Android (Google TV)", new String[] { "GoogleTV" }, null, DeviceType.DMR, null ),	
+	
+	/**
+	 * Tizen is a Linux Foundation project. Mostly used by various Samsung devices.
+	 * @see <a href="https://wiki.tizen.org/Tizen_Browser">Tizen Browser user-agent format</a> 
+	 * @see <a href="http://developer.samsung.com/technical-doc/view.do?v=T000000203">Samsung Internet User-Agent String Format</a>
+	 * Not specified how devices like car display or a fridge would identify themselves. 
+	 */
+	TIZEN(		Manufacturer.LINUX_FOUNDATION,null, 101, "Tizen", new String[] { "Tizen" }, null, DeviceType.UNKNOWN, null ),	
+		TIZEN3(		Manufacturer.LINUX_FOUNDATION, OperatingSystem.TIZEN, 30, "Tizen 3", new String[] { "Tizen 3." }, null, DeviceType.UNKNOWN, null ),	
+		TIZEN3_MOBILE(		Manufacturer.LINUX_FOUNDATION,OperatingSystem.TIZEN3, 31, "Tizen 3 (Mobile)", new String[] { "mobile"}, null, DeviceType.MOBILE, null ),	
+		TIZEN3_TV(		Manufacturer.LINUX_FOUNDATION,OperatingSystem.TIZEN3, 32, "Tizen 3 (SmartTV)", new String[] { "Smart-TV", " TV "}, null, DeviceType.DMR, null ),	
+		TIZEN2(		Manufacturer.LINUX_FOUNDATION, OperatingSystem.TIZEN, 20, "Tizen 2", new String[] { "Tizen 2." }, null, DeviceType.UNKNOWN, null ),	
+		TIZEN2_MOBILE(		Manufacturer.LINUX_FOUNDATION,OperatingSystem.TIZEN2, 21, "Tizen 2 (Mobile)", new String[] { "mobile" }, null, DeviceType.MOBILE, null ),	
+		TIZEN2_TV(		Manufacturer.LINUX_FOUNDATION,OperatingSystem.TIZEN2, 22, "Tizen 2 (SmartTV)", new String[] { "Smart-TV"," TV " }, null, DeviceType.DMR, null ),	
+		TIZEN_MOBILE(		Manufacturer.LINUX_FOUNDATION, OperatingSystem.TIZEN, 10, "Tizen (mobile)", new String[] { "mobile" }, null, DeviceType.MOBILE, null ),	
 
 	/**
 	 * Various Linux based operating systems.
@@ -156,6 +180,7 @@ public enum OperatingSystem {
 	LINUX(			Manufacturer.OTHER,null, 2, "Linux", new String[] { "Linux", "CamelHttpStream" }, null, DeviceType.COMPUTER, null ), // CamelHttpStream is being used by Evolution, an email client for Linux
 		UBUNTU(   Manufacturer.CONONICAL, OperatingSystem.LINUX, 1, "Ubuntu", new String[] {"ubuntu"}, null, DeviceType.COMPUTER, null),
 			UBUNTU_TOUCH_MOBILE(   Manufacturer.CONONICAL, OperatingSystem.UBUNTU, 200, "Ubuntu Touch (mobile)", new String[] {"mobile"}, null, DeviceType.MOBILE, null),
+		LINUX_SMART_TV(   Manufacturer.OTHER, OperatingSystem.LINUX, 21, "Linux (SmartTV)", new String[] {"SmartTv"}, null, DeviceType.DMR, null),
 	
 	/**
 	 * Other Symbian OS versions
@@ -221,6 +246,7 @@ public enum OperatingSystem {
 	private final DeviceType deviceType;
 	private final OperatingSystem parent;
 	private List<OperatingSystem> children;
+	private Pattern versionRegEx;
 	private static List<OperatingSystem> topLevelOperatingSystems;
 	
     private OperatingSystem(Manufacturer manufacturer, OperatingSystem parent, int versionId, String name,
@@ -236,7 +262,7 @@ public enum OperatingSystem {
         this.excludeList = Utils.toLowerCase(exclude);
         this.deviceType = deviceType;
         if (versionRegexString != null) { // not implemented yet
-            Pattern.compile(versionRegexString);
+            this.versionRegEx = Pattern.compile(versionRegexString);
         }
         if (this.parent == null)
             addTopLevelOperatingSystem(this);
@@ -294,7 +320,7 @@ public enum OperatingSystem {
     /**
      * Checks if the given user-agent string matches to the operating system. 
      * Only checks for one specific operating system. 
-     * @param agentString User-agent string
+     * @param agentString User-agent string as provided in the request.
      * @return boolean
      */
     public boolean isInUserAgentString(String agentString)
@@ -313,8 +339,8 @@ public enum OperatingSystem {
     /**
      * Checks if the given user-agent does not contain one of the tokens which should not match.
      * In most cases there are no excluding tokens, so the impact should be small.
-     * @param agentLowerCaseString
-     * @return
+     * @param agentLowerCaseString Lower case version of the user-agent string
+     * @return true or false
      */
     private boolean containsExcludeTokenLowercase(final String agentLowerCaseString) {
         return Utils.contains(agentLowerCaseString, excludeList);
@@ -342,8 +368,8 @@ public enum OperatingSystem {
 	/**
 	 * Parses user agent string and returns the best match. 
 	 * Returns OperatingSystem.UNKNOWN if there is no match.
-	 * @param agentString User-agent string
-	 * @return OperatingSystem
+	 * @param agentString User-agent string as provided in the request.
+	 * @return OperatingSystem enum
 	 */
 	public static OperatingSystem parseUserAgentString(String agentString)
 	{
@@ -362,9 +388,8 @@ public enum OperatingSystem {
      * Parses the user agent string and returns the best match for the given operating systems. 
      * Returns OperatingSystem.UNKNOWN if there is no match.
      * Be aware that if the order of the provided operating systems is incorrect or the set is too limited it can lead to false matches!
-     * @param agentString User-agent string
-     * @param operatingSystems OS list
-     * @return OperatingSystem
+     * @param agentString User-agent string as provided in the request.
+     * @return OperatingSystem enum
      */
     public static OperatingSystem parseUserAgentString(String agentString, List<OperatingSystem> operatingSystems)
     {
@@ -390,8 +415,8 @@ public enum OperatingSystem {
 	/**
 	 * Returns the enum constant of this type with the specified id.
 	 * Throws IllegalArgumentException if the value does not exist.
-	 * @param id OS id
-	 * @return OperatingSystem enum constant
+	 * @param id Id value of the operating system.
+	 * @return OperatingSystem enum
 	 */
 	public static OperatingSystem valueOf(short id)
 	{

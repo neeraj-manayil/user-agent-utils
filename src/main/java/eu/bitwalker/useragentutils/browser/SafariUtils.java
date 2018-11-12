@@ -10,7 +10,7 @@ import eu.bitwalker.useragentutils.Version;
  * There are 2 types of user agent strings that present Safari: one that contains fragment {@code Version/1.2.3} from where the version of
  * Safari browser can be extracted and others that do not. 
  * Fortunately Safari User-Agent string contains version of WebKit that can be used to discover the version of Safari browser. 
- * This class contains mapping between version of WebKit and Safari browser taken from Wikipedia
+ * This class contains mapping between version of WebKit and Safari browser taken from  @see <a href="https://en.wikipedia.org/wiki/Safari_version_history">Wikipedia</a>.
  * In most cases version of WebKit exists and uniquely identifies version of Safari browser. 
  * Unfortunately there are several exceptions. 
  * <ol>
@@ -21,7 +21,6 @@ import eu.bitwalker.useragentutils.Version;
  * information about operating system. Such feature however is not supported by the environment right now. 
  * </li>
  * </ol>
- * @see <a href="https://en.wikipedia.org/wiki/Safari_version_history">Wikipedia</a>
  * @author alexr
  */
 // https://en.wikipedia.org/wiki/Safari_version_history
@@ -141,6 +140,21 @@ public class SafariUtils {
 		{"601.3.9", "9.0.2"},
 		{"601.4.4", "9.0.3"},
 		{"601.5.17", "9.1"},
+		{"601.6.17", "9.1.1"},
+		{"601.7.1", "9.1.2"},
+		{"601.7.8", "9.1.3"},
+		
+		// Safari 10.x
+		{"602.1.50", "10"},
+		{"602.2.14", "10.0.1"}, 
+		{"602.3.12", "10.0.2"}, 
+		{"602.4.8", "10.0.3"}, 
+		{"603.1.30", "10.1"}, // New web technology additions and improvements.
+		{"603.2.4", "10.1.1"},
+		{"603.3.8", "10.1.2"},
+		
+		//Safari 11.x ... TODO
+		
 		{"522.11.3", "3.0"},
 		{"522.13.1", "3.0.2"},
 		{"522.12.2", "3.0.1"},
