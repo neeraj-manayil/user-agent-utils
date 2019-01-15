@@ -109,6 +109,7 @@ public enum Browser {
 		EDGE_MOBILE14(Manufacturer.MICROSOFT, Browser.EDGE_MOBILE, 307, "Microsoft Edge Mobile (layout engine 14)", new String[] {"Edge/14"}, null, BrowserType.MOBILE_BROWSER, RenderingEngine.EDGE_HTML, null ),
 		EDGE_MOBILE13(Manufacturer.MICROSOFT, Browser.EDGE_MOBILE, 308, "Microsoft Edge Mobile (layout engine 13)", new String[] {"Edge/13"}, null, BrowserType.MOBILE_BROWSER, RenderingEngine.EDGE_HTML, null ),
 		EDGE_MOBILE12(Manufacturer.MICROSOFT, Browser.EDGE_MOBILE, 302, "Microsoft Edge Mobile (layout engine 12)", new String[] {"Edge/12"}, null, BrowserType.MOBILE_BROWSER, RenderingEngine.EDGE_HTML, null ),
+		EDGE18(			Manufacturer.MICROSOFT, Browser.EDGE, 317, "Microsoft Edge (layout engine 18)", new String[] {"Edge/18"}, new String[] {"Mobile"}, BrowserType.WEB_BROWSER, RenderingEngine.EDGE_HTML, null ),
 		EDGE17(			Manufacturer.MICROSOFT, Browser.EDGE, 314, "Microsoft Edge (layout engine 17)", new String[] {"Edge/17"}, new String[] {"Mobile"}, BrowserType.WEB_BROWSER, RenderingEngine.EDGE_HTML, null ),
 		EDGE16(			Manufacturer.MICROSOFT, Browser.EDGE, 312, "Microsoft Edge (layout engine 16)", new String[] {"Edge/16"}, new String[] {"Mobile"}, BrowserType.WEB_BROWSER, RenderingEngine.EDGE_HTML, null ),
 		EDGE15(			Manufacturer.MICROSOFT, Browser.EDGE, 309, "Microsoft Edge (layout engine 15)", new String[] {"Edge/15"}, new String[] {"Mobile"}, BrowserType.WEB_BROWSER, RenderingEngine.EDGE_HTML, null ),
